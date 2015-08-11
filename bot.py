@@ -131,7 +131,7 @@ chan_cmds = {
 def parse(nick, msg):
     for i in chan_cmds[chan[1:]]:
         if re.search(i, msg, flags=re.I):
-            cmds[i](nick, msg)
+            chan_cmds[chan[1:]][i](nick, msg)
             return
 
     for i in cmds:

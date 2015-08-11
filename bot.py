@@ -37,10 +37,7 @@ message sent, command and all.
 """
 
 def test(nick, msg):
-    if nick == "natkarmios":
-        chat("/me - Your servant is functional!")
-    else:
-        chat("/me - Nobody can manipulate me! NatKarmios is my master!")
+    chat("/me is functional!")
 
 
 def reply(nick, msg):
